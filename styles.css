@@ -9,13 +9,28 @@
     /* --page-width: 800px; */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section > * {
+    width: 800px;
 }
 
 h1 {
@@ -30,7 +45,7 @@ h3 {
 /* placeholder, to make the img not annoyingly huge */
 .hero-container img {
     height: 200px;
-    width: 300px;
+    width: 500px;
 }
 
 .bg-dark > *,
@@ -48,7 +63,6 @@ h3 {
 
 .header-container {
     display: flex;
-    padding: 0 16px;
 }
 
 .nav-links {
@@ -64,4 +78,5 @@ h3 {
 
 .hero-container {
     display: flex;
+    gap: 16px;
 }
