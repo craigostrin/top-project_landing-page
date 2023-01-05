@@ -5,8 +5,7 @@
     --dark-color: #1F2937;
     --accent-color: #3882F6;
     --gray: #E5E7EB;
-
-    /* --page-width: 800px; */
+    --body-width: 800px;
 }
 
 h1 {
@@ -53,7 +52,7 @@ body {
 }
 
 .section > * {
-    width: 800px;
+    width: var(--body-width);
 }
 
 /* placeholder, to make the img not annoyingly huge */
@@ -102,6 +101,7 @@ body {
     align-items: center;
 }
 
+
 /***** HERO *****/
 
 .hero-container {
@@ -119,6 +119,7 @@ body {
 .hero-text button {
     align-self: flex-start;
 }
+
 
 /***** INFORMATION *****/
 
@@ -176,4 +177,30 @@ body {
     font-size: 20px;
     font-weight: bold;
     align-self: flex-end;
+}
+
+
+/***** ACTION *****/
+
+.action-container {
+    margin: 72px 0;
+    padding: 36px 0px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-container button {
+    border: 2px solid white;
+}
+
+
+/***** FOOTER *****/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
 }
