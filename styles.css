@@ -101,6 +101,11 @@ body {
     align-items: center;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: var(--off-white)
+}
+
 
 /***** HERO *****/
 
